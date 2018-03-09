@@ -9,9 +9,18 @@ import org.glassfish.grizzly.http.server.HttpServer;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.assertEquals;
 
-public class MyResourceTest {
+import java.text.SimpleDateFormat;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+import java.util.TimeZone;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+public class DateFormatResTest {
 
     private HttpServer server;
     private WebTarget target;
@@ -42,7 +51,15 @@ public class MyResourceTest {
      */
     @Test
     public void testGetIt() {
-        String responseMsg = target.path("myresource").request().get(String.class);
-        assertEquals("Got it!", responseMsg);
+        String responseMsg = target.path("now").queryParam("tz", "Europe/Paris").request().get(String.class);
+        System.err.println(responseMsg);
+        assertTrue(responseMsg != null && responseMsg.length() > 0);
+
+    }
+
+    @Test
+    public void getLocalesRegions() {
+        String responseMsg = target.path("list").request().get(String.class);
+        assertTrue(responseMsg != null && responseMsg.length() > 0);
     }
 }
