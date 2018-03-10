@@ -30,12 +30,11 @@ public class DateFormatRes {
     @Produces(MediaType.TEXT_PLAIN)
     public String formatNow(@DefaultValue("UTC") @QueryParam("tz") String idTZ) {
         // TimeZone tz = SimpleTimeZone.getTimeZone(idTZ);
-        String pattern = DateTimeFormatterBuilder.getLocalizedDateTimePattern(
-                FormatStyle.FULL, FormatStyle.FULL, IsoChronology.INSTANCE, Locale.FRENCH);
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(pattern);
+        // String pattern = DateTimeFormatterBuilder.getLocalizedDateTimePattern(
+        // FormatStyle.FULL, FormatStyle.FULL, IsoChronology.INSTANCE, Locale.FRENCH);
+        // DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("uuuu-MM-dd HH:mm:ss OOOO (zzzz)");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("eeee dd MMMM uuuu, HH:mm:ss (OOOO) : zzzz");
         return ZonedDateTime.now(ZoneId.of(idTZ)).format(dateTimeFormatter.withLocale(Locale.FRENCH));
-
-
     }
 
     @GET
