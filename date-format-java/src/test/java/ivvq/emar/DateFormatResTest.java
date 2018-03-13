@@ -1,23 +1,14 @@
 package ivvq.emar;
 
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.client.WebTarget;
-
 import org.glassfish.grizzly.http.server.HttpServer;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.text.SimpleDateFormat;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Locale;
-import java.util.TimeZone;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class DateFormatResTest {
@@ -46,19 +37,15 @@ public class DateFormatResTest {
         server.stop();
     }
 
-    /**
-     * Test to see that the message "Got it!" is sent in the response.
-     */
     @Test
-    public void testGetIt() {
+    public void testNowAtParis() {
         String responseMsg = target.path("now").queryParam("tz", "Europe/Paris").request().get(String.class);
-        System.err.println(responseMsg);
         assertTrue(responseMsg != null && responseMsg.length() > 0);
 
     }
 
     @Test
-    public void getLocalesRegions() {
+    public void getListOfTimeZones() {
         String responseMsg = target.path("list").request().get(String.class);
         assertTrue(responseMsg != null && responseMsg.length() > 0);
     }
