@@ -8,7 +8,10 @@ import org.junit.Test;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class DateFormatResTest {
@@ -39,14 +42,16 @@ public class DateFormatResTest {
 
     @Test
     public void testNowAtParis() {
-        String responseMsg = target.path("now").queryParam("tz", "Europe/Paris").request().get(String.class);
-        assertTrue(responseMsg != null && responseMsg.length() > 0);
+        Response responseMsg = target.path("now").queryParam("tz", "Europe/Paris").request().accept(MediaType.APPLICATION_JSON).get();
+        assertEquals(200, responseMsg.getStatus());
+        assertTrue(responseMsg.hasEntity());
 
     }
 
     @Test
     public void getListOfTimeZones() {
-        String responseMsg = target.path("list").request().get(String.class);
-        assertTrue(responseMsg != null && responseMsg.length() > 0);
+        Response responseMsg = target.path("list").request().accept(MediaType.APPLICATION_JSON).get();
+        assertEquals(200, responseMsg.getStatus());
+        assertTrue(responseMsg.hasEntity());
     }
 }
