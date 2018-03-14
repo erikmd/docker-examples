@@ -18,7 +18,8 @@ def usage(exit_code=0):
     print("\nUsage: \t%s help\n"
           "\t%s list\n"
           "\t%s now <time zone>\n"
-          % (prog, prog, prog))
+          "\t%s repl\n"
+          % (prog, prog, prog, prog))
     exit(exit_code)
 
 
@@ -43,7 +44,7 @@ def now(timezone):
     if response.status_code != 200:
         print("Erreur %d" % response.status_code)
         print(response.text)
-        exit(1)
+        return
     data = response.json()
     print("La date et l'heure actuelles : %s" % data["dateTime"])
     print("Le nom du fuseau horaire est : %s" % data["timeZone"])
@@ -55,12 +56,38 @@ def list_tz():
     if response.status_code != 200:
         print("Erreur %d" % response.status_code)
         print(response.text)
-        exit(1)
+        return
     data = response.json()
     print("--8<---------------cut here---------------start------------->8---")
     for item in data:
         print(item)
     print("--8<---------------cut here---------------end--------------->8---")
+
+
+def repl():
+    get_ws_url()  # just to check
+
+    def recap():
+        print("Mode interactif.  Tapez :\n"
+              "  ? pour afficher cette aide\n"
+              "  ENTREE pour afficher la liste des fuseaux horaires\n"
+              "  Le nom d'un fuseau horaire suivi d'ENTREE pour le choisir\n"
+              "  Ctrl+D pour quitter")
+
+    recap()
+    try:
+        while True:
+            print("> ", end="")
+            query = input().strip()
+            if query == "?":
+                recap()
+            elif len(query) == 0:
+                list_tz()
+            else:
+                now(query)
+    except EOFError:
+        print("Fin du mode interactif.")
+        exit(0)
 
 
 def main(argv):
@@ -78,6 +105,8 @@ def main(argv):
         else:
             print("Error: command 'now' expects one argument", file=sys.stderr)
             usage(1)
+    elif command == "repl":
+        repl()
     else:
         print("Error: unknown command '%s'" % command, file=sys.stderr)
         usage(1)
