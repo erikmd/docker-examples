@@ -9,6 +9,15 @@
     <version>1.0-SNAPSHOT</version>
     <name>date-format-java</name>
 
+    <licenses>
+        <license>
+            <name>The 3-Clause BSD License</name>
+            <url>https://opensource.org/licenses/BSD-3-Clause</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+	</license>
+    </licenses>
+
     <dependencyManagement>
         <dependencies>
             <dependency>

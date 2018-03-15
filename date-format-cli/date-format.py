@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Author: Erik Martin-Dorel, 2018
+#
+# Copyright (c) 2018  Erik Martin-Dorel
+#
+# This file is distributed under the BSD-3 license, which is available
+# at https://opensource.org/licenses/BSD-3-Clause
 
 # This script depends on the requests package.
 # You can get the right environment by running:
