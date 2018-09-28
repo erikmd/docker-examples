@@ -1,10 +1,9 @@
 # docker-examples
 
-This repo gathers examples and material for exercises on Docker
-(starter for GitHub Classroom).
+Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
-## Author and License
+## Auteur et licence
 
-The code herein has been developed by
-[Erik Martin-Dorel](https://github.com/erikmd) and is distributed
-under the [BSD-3 license](./LICENSE).
+Le code de ce projet a été développé par
+[Erik Martin-Dorel](https://github.com/erikmd) et est distribué sous
+licence [BSD-3](./LICENSE).
