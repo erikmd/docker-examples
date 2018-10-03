@@ -10,7 +10,7 @@ Pour installer **Docker CE**, consulter les instructions
 d'installation dans la documentation
 <https://docs.docker.com/install/linux/docker-ce/debian/>
 ou bien exécuter directement le script
-[bin/install-docker](./bin/install-docker#L5-L20) fourni dans ce dépôt Git
+[bin/install-docker](./bin/install-docker#L5-L21) fourni dans ce dépôt Git
 en faisant :
 
 ```bash
