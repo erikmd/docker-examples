@@ -6,17 +6,28 @@ Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
 ### Sous Debian GNU/Linux
 
-Pour installer **Docker CE**, exécuter le script
-[bin/install-docker](./bin/install-docker#L5-L20) fourni dans ce dépôt Git
-ou bien consulter directement les instructions d'installation dans la
-documentation :
+Pour installer **Docker CE**, consulter les instructions
+d'installation dans la documentation
 <https://docs.docker.com/install/linux/docker-ce/debian/>
+ou bien exécuter directement le script
+[bin/install-docker](./bin/install-docker#L5-L20) fourni dans ce dépôt Git
+en faisant :
 
-Pour installer **docker-compose**, exécuter le script
+```bash
+$ ./bin/install-docker
+```
+
+Pour installer **docker-compose**, consulter les instructions
+d'installation dans la documentation
+<https://docs.docker.com/compose/install/>
+ou bien exécuter directement le script
 [bin/install-docker-compose](./bin/install-docker-compose#L5-L12) fourni
-dans ce dépôt Git ou bien consulter directement les instructions
-d'installation dans la documentation :
-<https://docs.docker.com/compose/install/>  
+dans ce dépôt Git en faisant :
+
+```bash
+$ ./bin/install-docker-compose
+```
+
 (à moins que vous ne souhaitiez installer `docker-compose` avec `pip3`
 comme il s'agit d'un programme Python, mais dans ce cas vérifiez les
 dépendances juste après avec `pip check && pip3 check` !)
