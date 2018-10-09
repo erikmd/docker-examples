@@ -10,22 +10,22 @@ Pour installer **Docker CE**, consulter les instructions
 d'installation dans la documentation
 <https://docs.docker.com/install/linux/docker-ce/debian/>
 ou bien exécuter directement le script
-[bin/install-docker](./bin/install-docker#L5-L21) fourni dans ce dépôt Git
+[bin/install-docker.sh](./bin/install-docker.sh#L5-L21) fourni dans ce dépôt Git
 en faisant :
 
 ```bash
-$ ./bin/install-docker
+$ bash ./bin/install-docker.sh
 ```
 
 Pour installer **docker-compose**, consulter les instructions
 d'installation dans la documentation
 <https://docs.docker.com/compose/install/>
 ou bien exécuter directement le script
-[bin/install-docker-compose](./bin/install-docker-compose#L5-L12) fourni
+[bin/install-docker-compose.sh](./bin/install-docker-compose.sh#L5-L12) fourni
 dans ce dépôt Git en faisant :
 
 ```bash
-$ ./bin/install-docker-compose
+$ bash ./bin/install-docker-compose.sh
 ```
 
 (à moins que vous ne souhaitiez installer `docker-compose` avec `pip3`
