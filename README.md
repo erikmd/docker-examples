@@ -48,6 +48,16 @@ Suivre l'une des approches suivantes :
 * <https://docs.docker.com/toolbox/overview/> (Docker Toolbox for Windows)  
   (*ancienne distribution utilisant `docker-machine` et VirtualBox*)
 
+## Prérequis : Définir des alias pour Docker
+
+- Ouvrir le fichier `~/.bashrc` avec l'éditeur de votre choix (ou
+  créer ce fichier s'il n'existe pas)
+- Y ajouter le contenu de [ce fichier](./bin/docker.bashrc)
+  (ou [tout sauf les 2 premiers alias](./bin/docker.bashrc#L9-L16) si
+  vous êtes sous Windows)
+- Redémarrer le terminal (ou faire `. ~/.bashrc`)
+- Pour vérifier, exécuter `dinfo` puis `docker version`
+
 ## Auteur et licence
 
 Le code de ce projet a été développé par
