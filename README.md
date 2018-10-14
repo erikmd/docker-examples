@@ -4,25 +4,25 @@ Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
 ## Prérequis : Installer Docker CE et docker-compose
 
-### Sous Debian GNU/Linux
+### Sous GNU/Linux (amd64)
 
-Pour installer **Docker CE**, consulter les instructions
-d'installation dans la documentation
-<https://docs.docker.com/install/linux/docker-ce/debian/>
-ou bien exécuter directement le script
-[bin/install-docker.sh](./bin/install-docker.sh#L5-L21) fourni dans ce dépôt Git
-en faisant :
+Pour installer **Docker CE**, consulter les
+[instructions d'installation dans la documentation
+officielle](https://docs.docker.com/install/#supported-platforms)
+ou bien (pour Debian stable ou Ubuntu ≥ 16.04) exécuter directement le
+script [bin/install-docker.sh](./bin/install-docker.sh#L5-L21)
+fourni dans ce dépôt Git en faisant :
 
 ```bash
 $ bash ./bin/install-docker.sh
 ```
 
-Pour installer **docker-compose**, consulter les instructions
-d'installation dans la documentation
-<https://docs.docker.com/compose/install/>
+Pour installer **docker-compose**, consulter les
+[instructions d'installation dans la documentation
+officielle](https://docs.docker.com/compose/install/)
 ou bien exécuter directement le script
-[bin/install-docker-compose.sh](./bin/install-docker-compose.sh#L5-L12) fourni
-dans ce dépôt Git en faisant :
+[bin/install-docker-compose.sh](./bin/install-docker-compose.sh#L5-L12)
+fourni dans ce dépôt Git en faisant :
 
 ```bash
 $ bash ./bin/install-docker-compose.sh
