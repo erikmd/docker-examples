@@ -10,7 +10,7 @@ Pour installer **Docker CE**, consulter les
 [instructions d'installation dans la documentation
 officielle](https://docs.docker.com/install/#supported-platforms)
 ou bien (pour Debian stable ou Ubuntu ≥ 16.04) exécuter directement le
-script [bin/install-docker.sh](./bin/install-docker.sh#L5-L21)
+script [bin/install-docker.sh](./bin/install-docker.sh#L7-L23)
 fourni dans ce dépôt Git en faisant :
 
 ```bash

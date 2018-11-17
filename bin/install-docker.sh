@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-
+#=========================================================
+# Installer Docker CE sous Debian stable / Ubuntu >= 16.04
+#=========================================================
 set -e
 
 sudo apt-get update
