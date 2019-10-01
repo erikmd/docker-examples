@@ -43,7 +43,7 @@ Suivre l'une des approches suivantes :
 
 Suivre l'une des approches suivantes :
 
-* <https://docs.docker.com/docker-for-windows/install/> (Docker for Windows)  
+* <https://docs.docker.com/docker-for-windows/install/> (Docker for Windows 10 Pro/Enterprise)  
   (*attention cela active Hyper-V, qui est incompatible avec VirtualBox*)
 * <https://docs.docker.com/toolbox/overview/> (Docker Toolbox for Windows)  
   (*ancienne distribution utilisant `docker-machine` et VirtualBox*)
