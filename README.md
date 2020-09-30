@@ -2,13 +2,15 @@
 
 Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
-## Prérequis : Installer Docker CE et docker-compose
+## Prérequis : [Installer Docker](https://docs.docker.com/get-docker/) et docker-compose
+
+Plus précisément :
 
 ### Sous GNU/Linux (architecture *x86_64* = *amd64* requise)
 
-Pour installer **Docker CE**, consulter les
+Pour installer **Docker Engine**, consulter les
 [instructions d'installation dans la documentation
-officielle](https://docs.docker.com/install/#supported-platforms)
+officielle](https://docs.docker.com/engine/install/)
 ou bien (pour Debian stretch/buster ou Ubuntu ≥ 16.04) exécuter directement le
 script [bin/install-docker.sh](./bin/install-docker.sh#L7-L23)
 fourni dans ce dépôt Git après l'avoir inspecté, en faisant :
