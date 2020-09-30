@@ -31,8 +31,9 @@ $ bash ./bin/install-docker-compose.sh
 ```
 
 (à moins que vous ne souhaitiez installer `docker-compose` avec `pip3`
-comme il s'agit d'un programme Python, mais dans ce cas vérifiez les
-dépendances juste après avec `pip check && pip3 check` !)
+comme il s'agit d'un programme Python ; mais ce n'est pas l'approche
+recommandée… et il est très fréquent d'aboutir à des conflits de
+dépendances PyPI ! − vérifiable en faisant `pip check && pip3 check`)
 
 ### Sous macOS
 
