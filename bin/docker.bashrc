@@ -3,7 +3,14 @@
 # Alias pour Docker à copier-coller dans votre fichier ~/.bashrc
 # (ne copiez pas les 2 premiers alias si vous êtes sous Windows)
 
-alias docker='sudo -n docker'
+__docker() {
+    if [[ "${BASH_SOURCE[*]}" =~ "bash-completion" ]]; then
+        docker "$@"
+    else
+        sudo docker "$@"
+    fi
+}
+alias docker=__docker
 alias docker-compose='sudo -n docker-compose'
 
 alias dinfo='docker info'
