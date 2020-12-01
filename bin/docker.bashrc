@@ -11,7 +11,7 @@ __docker() {
     fi
 }
 alias docker=__docker
-alias docker-compose='sudo -n docker-compose'
+alias docker-compose='sudo docker-compose'
 
 alias dinfo='docker info'
 alias dhist='docker history'
