@@ -56,7 +56,7 @@ Suivre l'une des approches suivantes :
 - Ouvrir le fichier `~/.bashrc` avec l'éditeur de votre choix (ou
   créer ce fichier s'il n'existe pas)
 - Y ajouter le contenu de [ce fichier](./bin/docker.bashrc)
-  (ou [tout sauf les 2 premiers alias](./bin/docker.bashrc#L9-L16) si
+  (ou [tout sauf les 2 premiers alias](./bin/docker.bashrc#L16-L23) si
   vous êtes sous Windows)
 - Redémarrer le terminal (ou faire `. ~/.bashrc`)
 - Pour vérifier, exécuter `dinfo` puis `docker version`
