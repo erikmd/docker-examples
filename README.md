@@ -40,7 +40,7 @@ dans beaucoup de tutoriels en ligne (~`sudo usermod -aG docker $USER`~),
 mais pour plus de facilité − pour éviter de devoir taper à la main `sudo docker`
 mais juste `docker`, tout en ayant un *prompt* redemandant votre mot de passe −,
 vous pouvez suivre la configuration mentionnée à la section
-["Prérequis : Définir des alias pour Docker"](./#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker).
+["Prérequis : Définir des alias pour Docker"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker).
 
 ### Sous macOS
 
