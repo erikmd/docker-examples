@@ -35,6 +35,13 @@ comme il s'agit d'un programme Python ; mais ce n'est pas l'approche
 recommandée… et il est très fréquent d'aboutir à des conflits de
 dépendances PyPI ! − vérifiable en faisant `pip check && pip3 check`)
 
+**Attention!** n'ajoutez pas votre compte au groupe docker comme cela est suggéré
+dans beaucoup de tutoriels en ligne (~`sudo usermod -aG docker $USER`~),
+mais pour plus de facilité − pour éviter de devoir taper à la main `sudo docker`
+mais juste `docker`, tout en ayant un *prompt* redemandant votre mot de passe −,
+vous pouvez suivre la configuration mentionnée à la section
+["Prérequis : Définir des alias pour Docker"](./#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker).
+
 ### Sous macOS
 
 Suivre l'une des approches suivantes :
@@ -53,13 +60,17 @@ Suivre l'une des approches suivantes :
 
 ## Prérequis : Définir des alias pour Docker
 
-- Ouvrir le fichier `~/.bashrc` avec l'éditeur de votre choix (ou
+- Ouvrir le fichier **`~/.bashrc`** avec l'éditeur de votre choix (ou
   créer ce fichier s'il n'existe pas)
 - Y ajouter le contenu de [ce fichier](./bin/docker.bashrc)
   (ou [tout sauf les 2 premiers alias](./bin/docker.bashrc#L16-L23) si
   vous êtes sous Windows)
 - Redémarrer le terminal (ou faire `. ~/.bashrc`)
 - Pour vérifier, exécuter `dinfo` puis `docker version`
+
+Pour plus de détails sur la motivation de l'alias `__docker` proposé, voir si besoin :
+- Ce paragraphe du wiki Docker-Coq: [Convenience config for GNU/Linux and macOS](https://github.com/coq-community/docker-coq/wiki/CLI-usage#convenience-config-for-gnulinux-and-macos)
+- Cette question StackExchange/Unix: [How to autocomplete a shell command starting with (an alias involving) sudo](https://unix.stackexchange.com/q/622105/297058)
 
 ## Auteur et licence
 
