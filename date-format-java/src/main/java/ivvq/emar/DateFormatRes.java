@@ -2,6 +2,9 @@ package ivvq.emar;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -12,6 +15,12 @@ import java.util.SimpleTimeZone;
 
 @Path("/")
 public class DateFormatRes {
+
+    @GET
+    @Path("")
+    public Response index() throws URISyntaxException {
+        return Response.seeOther(new URI("/application.wadl")).build();
+    }
 
     @GET
     @Path("now")

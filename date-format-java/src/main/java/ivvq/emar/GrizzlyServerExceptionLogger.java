@@ -12,7 +12,6 @@ import javax.ws.rs.ext.Provider;
 public class GrizzlyServerExceptionLogger implements ExceptionMapper<Exception> {
     private static final Logger _log = LoggerFactory.getLogger(GrizzlyServerExceptionLogger.class);
 
-    @Override
     public Response toResponse(Exception ex) {
         _log.error("Une erreur est survenue lors de l'exécution d'une requête", ex);
         return Response.status(500).entity(Exceptions.getStackTraceAsString(ex)).type("text/plain")
