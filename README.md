@@ -2,6 +2,15 @@
 
 Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
+## Metadata
+
+### LAST NAME : 
+### First name : 
+### TP group :
+- [ ] Linux
+- [ ] macOS
+- [ ] Windows
+
 ## Prérequis : [Installer Docker](https://docs.docker.com/get-docker/) et docker-compose
 
 Plus précisément :
