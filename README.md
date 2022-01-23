@@ -48,8 +48,8 @@ dépendances PyPI ! − vérifiable en faisant `pip check && pip3 check`)
 dans beaucoup de tutoriels en ligne (~`sudo usermod -aG docker $USER`~),
 mais pour plus de facilité − pour éviter de devoir taper à la main `sudo docker`
 mais juste `docker`, tout en ayant un *prompt* redemandant votre mot de passe −,
-vous pouvez suivre la configuration mentionnée à la section
-["Prérequis : Définir des alias pour Docker"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker).
+vous pouvez suivre la configuration mentionnée ci-dessous
+(["Prérequis : Définir des alias pour Docker"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker)).
 
 ### Sous macOS
 
@@ -77,9 +77,9 @@ Suivre l'une des approches suivantes :
 - Redémarrer le terminal (ou faire `. ~/.bashrc`)
 - Pour vérifier, exécuter `dinfo` puis `docker version`
 
-Pour plus de détails sur la motivation de l'alias `__docker` proposé, voir si besoin :
-- Ce paragraphe du wiki Docker-Coq: [Convenience config for GNU/Linux and macOS](https://github.com/coq-community/docker-coq/wiki/CLI-usage#convenience-config-for-gnulinux-and-macos)
-- Cette question StackExchange/Unix: [How to autocomplete a shell command starting with (an alias involving) sudo](https://unix.stackexchange.com/q/622105/297058)
+Pour plus de détails sur les motivations de l'`alias docker=__docker`,
+voir aussi cette réponse sur StackOverflow :
+["docker.sock permission denied"](https://stackoverflow.com/a/65956808/9164010).
 
 ## Auteur et licence
 
