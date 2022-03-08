@@ -15,6 +15,22 @@ Ce dépôt contient des exemples et supports d'exercices sur Docker.
 
 Plus précisément :
 
+### Sous macOS
+
+Suivre l'approche suivante :
+
+* <https://docs.docker.com/docker-for-mac/install/> (Docker + docker-compose pour macOS)  
+  Choisir `Mac with Apple chip` si la ligne de commande `uname -m` renvoie `arm64`.
+
+### Sous Windows
+
+Suivre l'une des approches suivantes :
+
+* <https://docs.docker.com/docker-for-windows/install/> + `WSL 2 backend`
+* <https://docs.docker.com/docker-for-windows/install/> + `Hyper-V backend`
+
+Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatible avec VirtualBox*.
+
 ### Sous GNU/Linux (architecture *x86_64* = *amd64* requise)
 
 Pour installer **Docker Engine**, consulter les
@@ -44,31 +60,17 @@ comme il s'agit d'un programme Python ;
 **mais ce n'est pas l'approche recommandée…** et il est très fréquent d'aboutir
 à des conflits de dépendances PyPI ! − vérifiable en faisant `pip check && pip3 check`)
 
-### ⚠️ Attention !
+## Attention !
 
-**N'ajoutez pas** votre compte au groupe `docker` comme cela est suggéré
+**⚠️ N'ajoutez pas** votre compte au groupe `docker` comme cela est suggéré
 dans beaucoup de tutoriels en ligne (~`sudo usermod -aG docker $USER`~),
 mais pour plus de facilité − pour éviter de devoir taper à la main `sudo docker`
 mais juste `docker`, tout en ayant un *prompt* redemandant votre mot de passe −,
 vous pouvez suivre la configuration mentionnée ci-dessous
 (["Prérequis : Définir des alias pour Docker"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker)).
 
-### Sous macOS
-
-Suivre l'une des approches suivantes :
-
-* <https://docs.docker.com/docker-for-mac/install/> (Docker + docker-compose pour macOS)  
-  Choisir `Mac with Apple chip` si la ligne de commande `uname -m` renvoie `arm64`.
-* <https://docs.docker.com/docker-for-mac/docker-toolbox/> (installation alternative)
-
-### Sous Windows
-
-Suivre l'une des approches suivantes :
-
-* <https://docs.docker.com/docker-for-windows/install/> + `WSL 2 backend`
-* <https://docs.docker.com/docker-for-windows/install/> + `Hyper-V backend`
-
-Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatible avec VirtualBox*.
+Pour les détails : le souci de sécurité sous-jacent est résumé sur StackOverflow,
+cf. ["docker.sock permission denied"](https://stackoverflow.com/a/65956808/9164010).
 
 ## Prérequis : Définir des alias pour Docker
 
@@ -79,10 +81,6 @@ Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatibl
   vous êtes sous Windows ou macOS)
 - Redémarrer le terminal (ou faire `. ~/.bashrc` sous GNU/Linux)
 - Pour vérifier, exécuter `dinfo` puis `docker version`
-
-Pour plus de détails sur les motivations de l'`alias docker=__docker`,
-voir par exemple ce résumé sur StackOverflow :
-["docker.sock permission denied"](https://stackoverflow.com/a/65956808/9164010).
 
 ## Auteur et licence
 
