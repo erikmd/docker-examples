@@ -19,15 +19,15 @@ Plus précisément :
 
 Suivre l'approche suivante :
 
-* <https://docs.docker.com/docker-for-mac/install/> (Docker + docker-compose pour macOS)  
+* <https://docs.docker.com/desktop/mac/install/> (Docker + docker-compose pour macOS)  
   Choisir `Mac with Apple chip` si la ligne de commande `uname -m` renvoie `arm64`.
 
 ### Sous Windows
 
 Suivre l'une des approches suivantes :
 
-* <https://docs.docker.com/docker-for-windows/install/> + `WSL 2 backend`
-* <https://docs.docker.com/docker-for-windows/install/> + `Hyper-V backend`
+* <https://docs.docker.com/desktop/windows/install/> + `WSL 2 backend`
+* <https://docs.docker.com/desktop/windows/install/> + `Hyper-V backend`
 
 Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatible avec VirtualBox*.
 
@@ -35,30 +35,20 @@ Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatibl
 
 Pour installer **Docker Engine**, consulter les
 [instructions d'installation dans la documentation
-officielle](https://docs.docker.com/engine/install/)
-ou bien (pour Debian stretch/buster ou Ubuntu ≥ 16.04) exécuter directement le
-script [bin/install-docker.sh](./bin/install-docker.sh#L7-L23)
-fourni dans ce dépôt Git **après l'avoir inspecté**, en faisant :
+officielle](https://docs.docker.com/engine/install/) :
 
-```bash
-$ bash ./bin/install-docker.sh
-```
+* <https://docs.docker.com/engine/install/debian/> pour Debian et al.
+* <https://docs.docker.com/engine/install/ubuntu/> pour Ubuntu et al.
 
 Pour installer **docker-compose**, consulter les
 [instructions d'installation dans la documentation
-officielle](https://docs.docker.com/compose/install/)
-ou bien exécuter directement le script
-[bin/install-docker-compose.sh](./bin/install-docker-compose.sh#L5-L12)
-fourni dans ce dépôt Git **après l'avoir inspecté**, en faisant :
+officielle](https://docs.docker.com/compose/install/).
 
-```bash
-$ bash ./bin/install-docker-compose.sh
-```
-
-(à moins que vous ne souhaitiez installer `docker-compose` avec `pip3`
-comme il s'agit d'un programme Python ;
-**mais ce n'est pas l'approche recommandée…** et il est très fréquent d'aboutir
-à des conflits de dépendances PyPI ! − vérifiable en faisant `pip check && pip3 check`)
+(*Remarque :* si jamais vous souhaitiez installer `docker-compose` avec `pip3`
+comme il s'agit d'un programme Python,
+**ce n'est pas l'approche recommandée…**
+et il est très fréquent d'aboutir à des conflits de dépendances PyPI !
+− vérifiable en faisant `pip check && pip3 check`)
 
 ## Attention !
 
