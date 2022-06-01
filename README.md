@@ -31,7 +31,7 @@ Suivre l'une des approches suivantes :
 
 Bien vérifier les prérequis, notamment, Hyper-V est efficace mais *incompatible avec VirtualBox*.
 
-### Sous GNU/Linux (architecture *x86_64* = *amd64* requise)
+### Sous GNU/Linux
 
 Pour installer **Docker Engine**, consulter les
 [instructions d'installation dans la documentation
