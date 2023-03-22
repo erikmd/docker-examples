@@ -79,4 +79,4 @@ cf. ["docker.sock permission denied"](https://stackoverflow.com/a/65956808/91640
 
 Le code de ce projet a été développé par
 [Erik Martin-Dorel](https://github.com/erikmd) et est distribué sous
-licence [BSD-3](./LICENSE).
+licence [MIT](./LICENSE).
