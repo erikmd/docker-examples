@@ -60,7 +60,7 @@ dans beaucoup de tutoriels en ligne (~`sudo usermod -aG docker $USER`~),
 mais pour plus de facilité − pour éviter de devoir taper à la main `sudo docker`
 mais juste `docker`, tout en ayant un *prompt* redemandant votre mot de passe −,
 vous pouvez suivre la configuration mentionnée ci-dessous
-(["Prérequis : Définir des alias pour Docker"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker)).
+(["Prérequis : Définir des alias pour Docker Engine"](#pr%C3%A9requis--d%C3%A9finir-des-alias-pour-docker-engine)).
 
 Pour les détails : le souci de sécurité sous-jacent est résumé sur StackOverflow,
 cf. ["docker.sock permission denied"](https://stackoverflow.com/a/65956808/9164010).
